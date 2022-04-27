@@ -1,6 +1,6 @@
 package fiap.tokio.logica.exercicios.aula06;
 import javax.swing.JOptionPane;
-public class Aula06ex01 {
+public class Aula6ex01 {
 	public static void main(String[] args) {
 		String n = JOptionPane.showInputDialog("Digite um número");
 		
