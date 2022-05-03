@@ -3,14 +3,27 @@ package fiap.tokio.logica.aulas;
 public class Matrizes {
 	public static void main(String[] args) {
 		
-		char [][] tabuleiro = new char [3] [3];
+		int [][] matriz = new int [2] [7];
 		
-		tabuleiro [0][0] = 'X';
-		tabuleiro [1][1] = 'O';
-		tabuleiro [2][2] = 'X';
+		matriz [1][4] = 5;
+		matriz [1][2] = 6;
+		matriz [0][3] = 13;
 		
+
+// Percorre um vetor igual a py		
+//		for (int numeros : matriz[0]) {
+//			System.out.println(numeros);
+//		}
 		
-		System.out.println(tabuleiro[0][0]);
+
+// Percorre as linhas e colunas de uma matriz
+		for (int linha = 0; linha<matriz.length; linha++) {
+			for (int i = 0; i<matriz[0].length;i++) {
+			System.out.printf("Linha: %d -- Col : %d -- Valor : %d \n",linha,i,matriz[linha][i]);
+			
+		}
+		System.out.println("");
 		
 	}
+}
 }

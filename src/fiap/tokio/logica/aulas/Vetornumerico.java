@@ -1,22 +1,29 @@
 package fiap.tokio.logica.aulas;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
 public class Vetornumerico {
 	public static void main(String[] args) {
 		
 		
-		int [] numeros = {1 , 2 , 3 , 4 , 5};
+		double [] notas = new double [5];
+		Scanner entrada = new Scanner(System.in);
+		double c = 0;
 		
-		for (int i=0; i <= numeros.length ; i++) {
-			
-			System.out.println("Pos:" + i + "Valor " + numeros[i]);
+		for (int i=0; i < notas.length ; i++) {   
+			String cstr = JOptionPane.showInputDialog("Digite sua nota");
+			double bleh = Double.parseDouble(cstr);
+		     
+		     c +=  bleh;
+		    		 
 			
 			
 		}
 		
+		double media = c/notas.length;
+		System.out.println(media);
 		
-		for (int numero : numeros ) {
-			System.out.println("Valor : "+ numero);
-			
-		}
 	}
 }
